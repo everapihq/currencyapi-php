@@ -19,8 +19,15 @@ composer require everapi/currencyapi-php
 
 ## Usage
 
+Initialize the API with your API Key (get one for free at [currencyapi.com]):
+
 ```php
 $currencyApi = new \CurrencyApi\CurrencyApi\CurrencyApiClient('YOUR-API-KEY');
+```
+
+Afterwards you can use the endpoints of the API like this:
+
+```php
 echo $currencyApi->latest([
     'base_currency' => 'EUR',
     'currencies' => 'USD',
@@ -36,7 +43,7 @@ These advanced endpoints currently require a paid subscription:
 - `convert`
 - `range`
 
-Find out more about our endpoints, parameters and response data structure in the [docs].
+Learn more about endpoints, parameters and response data structure in the [docs].
 
 [docs]: https://currencyapi.com/docs
 [currencyapi.com]: https://currencyapi.com
