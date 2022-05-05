@@ -1,6 +1,6 @@
 {
     "name": "everapi/currencyapi-php",
-    "description": "This is my package currencyapi-php",
+    "description": "A PHP wrapper for the currencyapi.com API",
     "keywords": [
         "currencyapi.com",
         "currencyapi-php",
