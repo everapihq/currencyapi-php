@@ -60,6 +60,14 @@ class CurrencyApiClient
     /**
      * @throws CurrencyApiException
      */
+    public function currencies(?array $query = [])
+    {
+        return $this->call('currencies', $query);
+    }
+
+    /**
+     * @throws CurrencyApiException
+     */
     public function latest(?array $query = [])
     {
         return $this->call('latest', $query);
